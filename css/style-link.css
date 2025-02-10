@@ -1,0 +1,98 @@
+/* ==========================
+   🎨 Variáveis Globais
+   ========================== */
+   :root {
+    --primary-color: #F7D2D6;       /* Cor principal */
+    --secondary-color: #B8697A;      /* Cor secundária */
+    --background-color: #fff0f5;     /* Cor de fundo */
+    --text-color: #FFFDF5;             /* Cor do texto */
+    --text-color-secondary: #B8697A;             /* Cor do texto */
+    --button-bg: #F4B5B8;            /* Fundo do botão */
+    --button-hover-bg: #481D24;      /* Fundo do botão ao passar o mouse */
+    --navbar-bg: #F4B5B8; /* Fundo da navbar */
+    --footer-bg: #F4B5B8;            /* Fundo do rodapé */
+}
+
+/* Estilo do fundo */
+body {
+	height: 100vh;
+    background: linear-gradient(180deg, var(--background-color), var(--secondary-color));
+    color: var(--background-color);
+    font-family: Arial, sans-serif;
+	overflow: hidden;
+}
+
+/* Foto de perfil */
+.perfil-img {
+    width: 120px;
+    height: 120px;
+    /* border-radius: 50%;
+    border: 3px solid var(--background-color); */
+    animation: pulse 2s infinite; /* Transição suave */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamanho original */
+    }
+    50% {
+        transform: scale(1.1); /* Aumento do tamanho */
+    }
+    100% {
+        transform: scale(1); /* Retorno ao tamanho original */
+    }
+}
+
+
+/* Bio */
+.bio {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+h1{
+	color: var(--text-color-secondary);;
+}
+
+/* Botões dos links */
+.btn-linktree {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    background: var(--background-color);
+    color: var(--text-color-secondary);
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Estilo para ícones */
+.btn-linktree i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+    color: var(--text-color-secondary);
+}
+
+.btn-linktree:hover {
+    background: var(--button-hover-bg);
+    color: var(--background-color);
+}
+
+.icon-favicon {
+    width: 20px;  /* Ajuste conforme necessário */
+    height: 20px;
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .btn-linktree {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
