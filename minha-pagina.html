@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="./images/favicon.svg">
 	<title>La Brigaderia</title>
+	<link rel="icon" type="image/png" href="./images/favicon.svg">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -19,51 +22,85 @@
 			<a class="navbar-brand" href="#">
 				<img src="./images/Logo.svg" alt="Doceria Delícia" height="75">
 			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
-					<li class="nav-item"><a class="nav-link text-white" href="#inicio">Comenzar</a></li>
-					<li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre nosotros</a></li>
-					<li class="nav-item"><a class="nav-link text-white" href="#produtos">Productos</a></li>
-					<li class="nav-item"><a class="nav-link text-white" href="#redes">Redes Sociales</a></li>
-					<li class="nav-item"><a class="nav-link text-white" href="#cardapio">Menú</a></li>
-					<li class="nav-item"><a class="nav-link text-white" href="#contato">Contáctanos</a></li>
-					<li class="nav-item"><a class="nav-link text-white" href="./index.html">Mis enlaces</a></li>
+					<li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#sobre">Sobre nosotros</a></li>
+					<li class="nav-item"><a class="nav-link" href="#produtos">Productos</a></li>
+					<li class="nav-item"><a class="nav-link" href="#redes">Redes Sociales</a></li>
+					<li class="nav-item"><a class="nav-link" href="#cardapio">Menú</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contato">Contáctanos</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-
-
-
-	<!-- Seção Início -->
-	<section id="inicio" class="hero">
-		<div class="container text-center">
-			<h1 data-aos="fade-up">Bienvenidos a La Brigadería</h1>
-			<p data-aos="fade-up" data-aos-delay="200">¡Los mejores dulces para endulzar tu vida!</p>
-			<a href="#produtos" class="btn btn-custom mt-3" data-aos="fade-up" data-aos-delay="400">Ver productos</a>
+	<!-- Hero Section -->
+	<section id="inicio" class="hero text-center init-section section dark-background"
+		style="position:relative; min-height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+		<div style="
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)), url('./images/morango.jpg') center center/cover no-repeat;
+        /* filter: blur(4px) grayscale(30%); */
+        z-index: 1;
+        ">
+		</div>
+		<div class="container position-relative" style="z-index:2;">
+			<div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+				<div class="col-xl-10">
+					<div class="text-center text-dark">
+						<h1 data-aos="fade-up">Bienvenidos a La Brigaderia</h1>
+						<p data-aos="fade-up" data-aos-delay="200">Los mejores dulces para endulzar tu vida</p>
+						<a href="#produtos" class="btn btn-outline-dark mt-3" data-aos="fade-up"
+							data-aos-delay="400">Ver
+							productos</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<!-- Seção Sobre Nós -->
-	<section id="sobre" class="bg-light">
-		<div class="container text-center">
-			<h2 data-aos="fade-right">Sobre nosotros</h2>
-			<p data-aos="fade-left">¡Nos apasionan los dulces y queremos traerte momentos de felicidad!</p>
+
+	<!-- Sobre Nosotros -->
+	<section id="sobre" class="py-5 bg-light">
+		<div class="container">
+			<div class="row align-items-center justify-content-center g-5">
+				<!-- Texto à esquerda -->
+				<div class="col-lg-6 order-2 order-lg-1">
+					<div data-aos="fade-right">
+						<h2 class="mb-3 fw-bold">Sobre nosotros</h2>
+						<p class="lead text-secondary">
+							La Brigaderia nació de una pasión por los dulces y el deseo de compartir momentos de
+							felicidad con cada bocado.
+							Nuestra historia comenzó en una pequeña cocina, donde la creatividad y el amor por la
+							repostería se unieron para crear recetas únicas.
+							Hoy, seguimos endulzando la vida de nuestros clientes con productos artesanales, hechos con
+							ingredientes de calidad y mucho cariño.
+						</p>
+					</div>
+				</div>
+				<!-- Foto à direita -->
+				<div class="col-lg-5 order-1 order-lg-2 text-center">
+					<img src="./images/retrato.jpg" alt="Retrato fundadora La Brigaderia"
+						class="img-fluid rounded-4 shadow" style="max-width:320px;" data-aos="fade-left">
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<!-- Seção Nossos Produtos -->
-	<section id="produtos">
+	<!-- Productos -->
+	<section id="produtos" class="py-5">
 		<div class="container">
 			<h2 class="text-center" data-aos="fade-up">Nuestros productos</h2>
 			<div class="row mt-4">
 				<div class="col-md-4" data-aos="zoom-in">
 					<div class="card">
-						<img src="bolo1.jpg" class="card-img-top" alt="Pastel de chocolate">
+						<img src="./images/chocolate.jpg" class="card-img-top" alt="Pastel de chocolate">
 						<div class="card-body text-center">
 							<h5 class="card-title">Pastel de chocolate</h5>
 						</div>
@@ -71,7 +108,7 @@
 				</div>
 				<div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
 					<div class="card">
-						<img src="cupcake.jpg" class="card-img-top" alt="Cupcake">
+						<img src="./images/classico.jpg" class="card-img-top" alt="Cupcake">
 						<div class="card-body text-center">
 							<h5 class="card-title">Cupcake</h5>
 						</div>
@@ -79,7 +116,7 @@
 				</div>
 				<div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
 					<div class="card">
-						<img src="brigadeiro.jpg" class="card-img-top" alt="Brigadeiros">
+						<img src="./images/tradicional.jpg" class="card-img-top" alt="Brigadeiros">
 						<div class="card-body text-center">
 							<h5 class="card-title">Brigadeiros</h5>
 						</div>
@@ -89,124 +126,173 @@
 		</div>
 	</section>
 
-	<!-- Seção Redes Sociais -->
-	<section id="redes" class="bg-light text-center">
-		<h2 data-aos="fade-right">Nuestras Redes Sociales</h2>
-		<p data-aos="fade-left">¡Síguenos para mantenerte al día con las últimas novedades!</p>
-		<a href="#" class="btn btn-custom mt-2" data-aos="fade-up"><i class="fab fa-instagram"></i> Instagram</a>
-	</section>
 
-	<!-- Seção Cardápio -->
-	<section id="cardapio">
-		<div class="container text-center">
-			<h2 data-aos="fade-up">Nosso Cardápio</h2>
-			<ul class="list-group" data-aos="fade-up" data-aos-delay="200">
-				<li class="list-group-item">Bolo de Chocolate - R$ 30,00</li>
-				<li class="list-group-item">Cupcake - R$ 10,00</li>
-				<li class="list-group-item">Brigadeiro - R$ 3,00</li>
-			</ul>
-		</div>
-	</section>
 
-	<!-- Seção Contato -->
-	<section id="contato" class="section-contact-1 bg-900 pt-150 pb-lg-250 pb-150 overflow-hidden">
-		<div class="container position-relative">
-			<h3 class="ds-3 mt-3 mb-4 text-center" style="color: var(--secondary-color);">Ponte en contacto</h3>
-			<p class="fs-5 fw-medium text-center mb-5" style="color: var(--text-color);">
-				Cada brigadeiro es una experiencia única. Si necesitas ayuda o quieres recomendaciones, estamos aquí
-				para endulzar tu día. ¡Escríbenos!
-			</p>
-
-			<div class="row">
-				<!-- Informações de contato -->
-				<div class="col-lg-4 d-flex flex-column mb-5">
-					<div class="contact-item mb-4">
-						<div class="icon-wrapper mb-3">
-							<i class="ri-phone-fill" style="color: var(--secondary-color); font-size: 28px;"></i>
-						</div>
-						<h5 style="color: var(--text-color);">Teléfono</h5>
-						<p class="text-muted">+56-97178-2969</p>
-						<a href="tel:+56-97178-2969" class="btn btn-link"
-							style="color: var(--secondary-color);">Llamar</a>
-					</div>
-					<div class="contact-item mb-4">
-						<div class="icon-wrapper mb-3">
-							<i class="ri-mail-fill" style="color: var(--secondary-color); font-size: 28px;"></i>
-						</div>
-						<h5 style="color: var(--text-color);">Correo electrónico</h5>
-						<p class="text-muted">labrigaderiacl@gmail.com</p>
-						<a href="mailto:labrigaderiacl@gmail.com" class="btn btn-link"
-							style="color: var(--secondary-color);">Enviar Correo</a>
-					</div>
-					<div class="contact-item mb-4">
-						<div class="icon-wrapper mb-3">
-							<i class="ri-whatsapp-fill" style="color: var(--secondary-color); font-size: 28px;"></i>
-						</div>
-						<h5 style="color: var(--text-color);">WhatsApp</h5>
-						<p class="text-muted">+56-97178-2969</p>
-						<a href="https://wa.me/56999992969?text=Hola,%20me%20gustaría%20más%20información!"
-							class="btn btn-link" style="color: var(--secondary-color);" target="_blank"
-							rel="noopener noreferrer">Escribir en WhatsApp</a>
-					</div>
-					<div class="contact-item mb-4">
-						<div class="icon-wrapper mb-3">
-							<i class="ri-map-2-fill" style="color: var(--secondary-color); font-size: 28px;"></i>
-						</div>
-						<h5 style="color: var(--text-color);">Dirección</h5>
-						<p class="text-muted">Av. Providencia 1234, Providencia, Santiago, Región Metropolitana, Chile
-						</p>
-						<a href="https://www.google.com/maps/search/?api=1&query=Av.+Providencia+1234,+Providencia,+Santiago,+Región+Metropolitana,+Chile"
-							class="btn btn-link" style="color: var(--secondary-color);" target="_blank"
-							rel="noopener noreferrer">Ver en el mapa</a>
-					</div>
+	<!-- Redes Sociales - Sección inovadora e responsiva -->
+	<section id="redes" class="py-5" style="background: var(--rosa-bg);">
+		<div class="container">
+			<div class="row justify-content-center align-items-center g-4">
+				<div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0" data-aos="fade-right">
+					<h2 class="fw-bold mb-3" style="color:var(--rosa-principal);font-size:2.2rem;">Nuestras Redes
+						Sociales</h2>
+					<p class="lead text-secondary mb-0" style="font-size:1.15rem;">
+						Síguenos y acompaña nuestro mundo dulce, novidades, lanzamientos y promociones exclusivas.
+					</p>
 				</div>
-
-				<!-- Formulário de contato -->
-				<div class="col-lg-7 offset-lg-1">
-					<h4 style="color: var(--text-color); margin-bottom: 1rem;">Dejar un mensaje</h4>
-					<form action="#" method="POST">
-						<div class="row">
-							<div class="col-md-6 mb-4">
-								<label for="name" class="form-label" style="color: var(--text-color);">Nombre</label>
-								<input type="text" class="form-control" id="name" name="name"
-									placeholder="Sofia Valentina" required />
-							</div>
-							<div class="col-md-6 mb-4">
-								<label for="email" class="form-label" style="color: var(--text-color);">Correo
-									electrónico</label>
-								<input type="email" class="form-control" id="email" name="email"
-									placeholder="contacto.sofia@gmail.com" required />
-							</div>
-							<div class="col-md-6 mb-4">
-								<label for="phone" class="form-label" style="color: var(--text-color);">Teléfono</label>
-								<input type="tel" class="form-control" id="phone" name="phone"
-									placeholder="+56 9999 9999" required />
-							</div>
-							<div class="col-md-6 mb-4">
-								<label for="subject" class="form-label" style="color: var(--text-color);">Sujeto</label>
-								<input type="text" class="form-control" id="subject" name="subject"
-									placeholder="Quiero contactar para..." required />
-							</div>
-							<div class="col-12 mb-4">
-								<label for="message" class="form-label"
-									style="color: var(--text-color);">Mensaje</label>
-								<textarea class="form-control" id="message" name="message" rows="5"
-									placeholder="Escribe tu mensaje aquí..." required></textarea>
-							</div>
-							<div class="col-12">
-								<button type="submit" class="btn btn-custom w-100 py-3">Enviar Mensaje</button>
-							</div>
-						</div>
-					</form>
+				<div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center"
+					data-aos="fade-left">
+					<div class="d-flex gap-4 flex-wrap">
+						<a href="https://www.facebook.com/LaBrigaderiaCL" target="_blank" aria-label="Facebook"
+							class="social-icon-link">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="https://www.instagram.com/la.brigaderia.cl" target="_blank" aria-label="Instagram"
+							class="social-icon-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="https://www.linkedin.com/company/la-brigaderia" target="_blank" aria-label="LinkedIn"
+							class="social-icon-link">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="https://wa.me/56971782969?text=Hola,%20me%20gustaría%20más%20información!"
+							target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon-link">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!-- Menú -->
+	<section id="cardapio" class="py-5 bg-light text-center position-relative">
+		<div class="container">
+			<h2 data-aos="fade-up">Menú</h2>
+			<p data-aos="fade-up" data-aos-delay="200">Explora nuestro delicioso menú y elige tu dulce favorito.</p>
+			<div class="row justify-content-center mt-4">
+				<div class="col-lg-10 col-xl-8">
+					<div class="table-responsive">
+						<table class="table align-middle shadow-sm rounded-4 custom-menu-table">
+							<thead>
+								<tr>
+									<th class="bg-white text-primary fw-bold border-0" style="font-size:1.1rem;">
+										Producto</th>
+									<th class="bg-white text-primary fw-bold border-0" style="font-size:1.1rem;">
+										Descripción</th>
+									<th class="bg-white text-primary fw-bold border-0" style="font-size:1.1rem;">Precio
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Brigadeiro Tradicional</td>
+									<td>Clásico brasileño de chocolate y leche condensada</td>
+									<td>$1.000</td>
+								</tr>
+								<tr>
+									<td>Brigadeiro de Coco</td>
+									<td>Brigadeiro suave cubierto con coco rallado</td>
+									<td>$1.200</td>
+								</tr>
+								<tr>
+									<td>Pastel de Chocolate</td>
+									<td>Bizcocho húmedo de chocolate con cobertura especial</td>
+									<td>$2.500</td>
+								</tr>
+								<tr>
+									<td>Cupcake</td>
+									<td>Cupcake esponjoso con buttercream artesanal</td>
+									<td>$2.000</td>
+								</tr>
+								<!-- Adicione mais itens aqui -->
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- Botão para baixar o menu -->
+			<a href="./menu.pdf" download class="btn btn-primary position-absolute" style="right: 2rem; bottom: 2rem;"
+				data-aos="fade-up" data-aos-delay="400">
+				<i class="bi bi-download"></i> Descargar menú
+			</a>
+		</div>
+	</section>
+
+	<!-- Contáctanos -->
+	<section id="contato" class="py-5 bg-light position-relative">
+		<div class="container">
+			<div class="row justify-content-center align-items-center g-5">
+				<!-- Card principal -->
+				<div class="col-lg-6 mx-auto">
+					<div class="card border-0 shadow-lg rounded-4 p-4 p-md-5"
+						style="background:rgba(255,255,255,0.97);">
+						<div class="mb-4 text-center">
+							<span class="badge rounded-pill bg-warning text-dark mb-2 px-3 py-2"
+								style="font-size:1rem;letter-spacing:1px;">Contáctanos</span>
+							<h2 class="fw-bold mb-2" style="font-size:2.2rem;">¿Hablamos?</h2>
+							<p class="text-secondary mb-0" style="font-size:1.1rem;">
+								¿Dudas, pedidos o sugerencias? ¡Estamos aquí para ti!
+							</p>
+						</div>
+						<form>
+							<div class="row g-3">
+								<div class="col-12 col-md-6">
+									<input type="text" class="form-control form-control-lg" placeholder="Nombre"
+										required>
+								</div>
+								<div class="col-12 col-md-6">
+									<input type="email" class="form-control form-control-lg"
+										placeholder="Correo electrónico" required>
+								</div>
+								<div class="col-12">
+									<textarea class="form-control form-control-lg" rows="3"
+										placeholder="¿En qué podemos ayudarte?" required></textarea>
+								</div>
+								<div class="col-12 d-grid">
+									<button type="submit"
+										class="btn btn-primary btn-lg rounded-pill mt-2 shadow-sm">Enviar
+										mensaje</button>
+								</div>
+							</div>
+						</form>
+						<div class="mt-4 d-flex flex-wrap justify-content-center gap-3 contact-links">
+							<a href="tel:+56-97178-2969" class="contact-link" aria-label="Telefone">
+								<span class="icon-circle"><i class="ri-phone-fill"></i></span>
+								<span class="contact-text">+56-97178-2969</span>
+							</a>
+							<a href="mailto:labrigaderiacl@gmail.com" class="contact-link" aria-label="E-mail">
+								<span class="icon-circle"><i class="ri-mail-fill"></i></span>
+								<span class="contact-text">labrigaderiacl@gmail.com</span>
+							</a>
+							<a href="https://wa.me/56999992969?text=Hola,%20me%20gustaría%20más%20información!"
+								target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="WhatsApp">
+								<span class="icon-circle"><i class="ri-whatsapp-fill"></i></span>
+								<span class="contact-text">WhatsApp</span>
+							</a>
+						</div>
+						<div class="mt-3 text-center small text-muted">
+							<span class="icon-circle icon-location"><i class="ri-map-pin-2-fill"></i></span>
+							Av. Providencia 1234, Providencia, Santiago, Chile
+						</div>
+					</div>
+				</div>
+				<!-- Mapa ao lado em desktop, abaixo no mobile -->
+				<div class="col-lg-5">
+					<div class="rounded-4 shadow-lg overflow-hidden" style="min-height:320px;">
+						<iframe
+							src="https://www.google.com/maps?q=Av.+Providencia+1234,+Providencia,+Santiago,+Región+Metropolitana,+Chile&output=embed"
+							width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- Footer -->
 	<footer>
-		<p>&copy; 2024 Doceria Delícia. Todos os direitos reservados.</p>
+		<p>&copy; 2025 La Brigaderia. Todos os direitos reservados.</p>
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -214,7 +300,6 @@
 	<script>
 		AOS.init();
 	</script>
-
 </body>
 
 </html>
