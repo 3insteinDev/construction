@@ -1,9 +1,9 @@
 :root {
-        --cor-escura: #5f6264;
-        --cor-clara: #f5f5f5;
-        --rosa-principal: #eb98b1;
-        --rosa-claro: #f5bccd;
-        --rosa-bg: #ffe6ed;
+        --cor-escura: #9b957c;
+        --cor-clara: #faf2e6;
+        --rosa-principal: #b28a8a;
+        --rosa-claro: #b28a8a;
+        --rosa-bg: #b28a8a;
         --navbar-height: 90px;
     }
 
@@ -42,7 +42,8 @@ section {
         overflow-x: clip; /* Adicione esta linha */
     }
     .navbar-brand img {
-        height: 75px;
+		margin-left: 15px;
+        height: 100px;
         max-height: 14vw;
         width: auto;
         transition: height 0.2s;
@@ -83,7 +84,7 @@ section {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border-radius: 0 0 32px 32px;
+        /* border-radius: 0 0 32px 32px; */
         box-shadow: 0 4px 24px rgba(67,71,74,0.03);
         position: relative;
         overflow: hidden;
@@ -122,7 +123,7 @@ section {
     }
 
     section {
-        border-radius: 24px;
+        /* border-radius: 24px; */
         margin-bottom: 2.5rem;
         box-shadow: 0 2px 16px rgba(67,71,74,0.02);
         background: #fff;
@@ -487,4 +488,10 @@ html, body {
     border: none;
     outline: none;
     box-shadow: none;
+}
+
+#img-cardapio{
+	border-radius: 18px 18px 0 0;
+	max-height: 200px;
+	object-fit: cover;
 }
