@@ -235,11 +235,11 @@ section {
     footer {
         margin-top: 60px;
         padding: 24px 0;
-        background: #f8f9fa;
+        background: var(--rosa-bg);
         text-align: center;
-        color: #888;
+        color: #faf2e7;
         font-size: 1rem;
-        border-radius: 18px 18px 0 0;
+        /* border-radius: 18px 18px 0 0; */
         box-shadow: 0 -2px 12px rgba(67,71,74,0.03);
         border-top: 1px solid #f0f0f0;
     }
