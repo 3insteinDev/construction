@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Delicatto Brigadeiros</title>
-	<link rel="icon" type="image/png" href="./images/favicon.svg">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -17,7 +17,7 @@
 
 <body>
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg fixed-top">
+	<nav class="navbar navbar-expand-lg ">
 		<div class="container">
 			<a class="navbar-brand" href="#">
 				<img src="./images/Logo-secundario.png" alt="Doceria Delícia" >
@@ -40,15 +40,13 @@
 	</nav>
 
 	<!-- Hero Section -->
-	<section id="inicio" class="hero d-flex align-items-stretch" style="min-height: 100vh; ">
+	<section id="inicio" class="hero d-flex align-items-stretch" style="min-height: 100vh;">
   <div class="container-fluid h-100">
-    <div class="row h-100 flex-nowrap">
+    <div class="row h-100">
       <!-- Esquerda: texto e imagem menor -->
       <div class="col-lg-6 d-flex flex-column justify-content-between align-items-start p-5" style="background: #b4977b;">
         <div>
-          <div class="mt-4 mb-5">
-            <img src="./images/12.png" alt="Delicatto Brigadeiros" style="max-width: 320px; width: 100%; box-shadow: 0 8px 32px rgba(0,0,0,0.10); border-radius: 8px;">
-          </div>
+          
           <h1 style="font-size: 3.5rem; font-weight: 600; color: #fff; line-height: 1;">Delicatto Brigadeiros</h1>
           <h2 style="font-size: 2rem; font-weight: 400; color: #fff; margin-top: 1.5rem;">Dulces Artesanales</h2>
           <p style="color: #f5ede3; font-size: 1.1rem; margin-top: 1rem;">Los mejores dulces para endulzar tu vida.</p>
@@ -56,14 +54,13 @@
         <div class="d-flex gap-3 mt-4">
           <a href="https://www.facebook.com/DelicattoCl" target="_blank" class="text-white fs-4"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/delicattocl" target="_blank" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.pinterest.com/" target="_blank" class="text-white fs-4"><i class="fab fa-pinterest-p"></i></a>
         </div>
       </div>
       <!-- Direita: imagem grande -->
-	<div class="col-lg-6 d-none d-lg-block p-0" style="background-color: #9c957c;">
-		<img src="./images/12.png" alt="Delicatto"
-			style="object-fit: cover; width: 100%; max-height: 100vh; display: block; margin: 0 auto;">
-	</div>
+      <div class="col-lg-6 p-0" style="background-color: #9c957c;">
+        <img src="./images/12.png" alt="Delicatto"
+          style="object-fit: cover; width: 100%; max-height: 100vh; display: block; margin: 0 auto;">
+      </div>
     </div>
   </div>
 </section>
@@ -143,7 +140,7 @@
 				Para conocer todos los sabores, tamaños y precios, descarga nuestro menú completo en PDF.
 			</p>
 			<!-- Botão para baixar o menu -->
-			<a href="./assets/Delicatto - Cartão Digital.pdf" download class="btn btn-primary position-absolute" style="right: 2rem; bottom: 2rem;"
+			<a href="./assets/Delicatto - Cartão Digital.pdf" download class="btn btn-delicatto position-absolute" style="right: 2rem; bottom: 2rem;"
 				data-aos="fade-up" data-aos-delay="400">
 				<i class="bi bi-download"></i> Descargar menú
 			</a>
@@ -190,20 +187,17 @@
 	
 
 	<!-- Contáctanos -->
-	<section id="contato" class="py-5 position-relative" >
+	<section id="contato" class="py-5 position-relative">
     <div class="container">
-        <div class="row justify-content-center align-items-center g-5">
+        <div class="row justify-content-center text-center align-items-center g-5">
             <!-- Card principal -->
-            <div class="col-lg-6 mx-auto">
-                <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5"
-                    style="background:rgba(255,255,255,0.97); border: 2px solid #b38a8a;">
+			 <h2 data-aos="fade-up">Contáctanos</h2>
+            <div class="col-lg-5 mx-auto">
+                <!-- <div class="border-0 rounded-4 p-4 p-md-5"
+                    style="background:rgba(255,255,255,0.97); border: 2px solid #b38a8a;"> -->
                     <div class="mb-4 text-center">
-                        <span class="badge rounded-pill mb-2 px-3 py-2"
-                            style="font-size:1rem;letter-spacing:1px;background:#b38a8a;color:#faf2e7;">
-                            Contáctanos
-                        </span>
-                        <h2 class="fw-bold mb-2" style="font-size:2.2rem; color:#9c957c;">¿Hablamos?</h2>
-                        <p class="text-secondary mb-0" style="font-size:1.1rem; color:#faf2e7;">
+                        <h5 class="fw-bold mb-2" style="font-size:1.3rem; color:#9c957c;">¿Hablamos?</h5>
+                        <p class="text-secondary mb-0" style="font-size:1rem; color:#faf2e7;">
                             ¿Dudas, pedidos o sugerencias? ¡Estamos aquí para ti!
                         </p>
                     </div>
@@ -211,66 +205,61 @@
                         <div class="row g-3">
                             <div class="col-12 col-md-6">
                                 <input type="text" class="form-control form-control-lg"
-                                    style="background:#faf2e7; border-color:#b38a8a; color:#faf2e7;"
+                                    style="background:#faf2e7; border-color:#b38a8a; color:#b38a8a;"
                                     placeholder="Nombre" required>
                             </div>
                             <div class="col-12 col-md-6">
                                 <input type="email" class="form-control form-control-lg"
-                                    style="background:#faf2e7; border-color:#b38a8a; color:#faf2e7;"
+                                    style="background:#faf2e7; border-color:#b38a8a; color:#b38a8a;"
                                     placeholder="Correo electrónico" required>
                             </div>
                             <div class="col-12">
                                 <textarea class="form-control form-control-lg" rows="3"
-                                    style="background:#faf2e7; border-color:#b38a8a; color:#faf2e7;"
+                                    style="background:#faf2e7; border-color:#b38a8a; color:#b38a8a;"
                                     placeholder="¿En qué podemos ayudarte?" required></textarea>
                             </div>
                             <div class="col-12 d-grid">
-                                <button type="submit"
-                                    class="btn btn-lg rounded-pill mt-2 shadow-sm"
-                                    style="background:#b38a8a; color:#faf2e7; border:none;">
+                                <button type="submit" class="btn btn-delicatto btn-lg rounded-pill mt-2 shadow-sm btn-transition">
                                     Enviar mensaje
                                 </button>
                             </div>
                         </div>
                     </form>
-                    <div class="mt-4 d-flex flex-wrap justify-content-center gap-3 contact-links">
-                        <a href="tel:+56-98432-3660" class="contact-link" aria-label="Telefone"
-                            style="color:#faf2e7;">
-                            <span class="icon-circle" style="background:#faf2e7; border:1px solid #b38a8a; color:#b38a8a;">
-                                <i class="ri-phone-fill"></i>
-                            </span>
-                            <span class="contact-text">+56-97178-2969</span>
-                        </a>
-                        <a href="mailto:delicattocl@gmail.com" class="contact-link" aria-label="E-mail"
-                            style="color:#faf2e7;">
-                            <span class="icon-circle" style="background:#faf2e7; border:1px solid #b38a8a; color:#b38a8a;">
-                                <i class="ri-mail-fill"></i>
-                            </span>
-                            <span class="contact-text">delicattocl@gmail.com</span>
-                        </a>
-                        <a href="https://wa.me/56984323660?text=Hola,%20me%20gustaría%20más%20información!"
-                            target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="WhatsApp"
-                            style="color:#faf2e7;">
-                            <span class="icon-circle" style="background:#faf2e7; border:1px solid #b38a8a; color:#b38a8a;">
-                                <i class="ri-whatsapp-fill"></i>
-                            </span>
-                            <span class="contact-text">WhatsApp</span>
-                        </a>
-                    </div>
-                    <div class="mt-3 text-center small" style="color:#b38a8a;">
-                        <span class="icon-circle icon-location" style="background:#faf2e7; border:1px solid #b38a8a; color:#b38a8a;">
-                            <i class="ri-map-pin-2-fill"></i>
-                        </span>
-                        Av. Providencia 1234, Providencia, Santiago, Chile
-                    </div>
-                </div>
+                <!-- </div> -->
             </div>
             <!-- Mapa ao lado em desktop, abaixo no mobile -->
-            <div class="col-lg-5">
-                <div class="rounded-4 shadow-lg overflow-hidden" style="min-height:320px; border:2px solid #b38a8a;">
+            <div class="col-lg-5 mx-auto">
+                <div class="mt-4 d-flex contact-links">
+                    <a href="tel:+56-98432-3660" class="contact-link" aria-label="Telefone">
+						<span class="icon-circle">
+							<i class="ri-phone-fill"></i>
+						</span>
+						<span class="contact-text">+56-97178-2969</span>
+					</a>
+					<a href="mailto:delicattocl@gmail.com" class="contact-link" aria-label="E-mail">
+						<span class="icon-circle">
+							<i class="ri-mail-fill"></i>
+						</span>
+						<span class="contact-text">delicattocl@gmail.com</span>
+					</a>
+					<a href="https://wa.me/56984323660?text=Hola,%20me%20gustaría%20más%20información!" target="_blank"
+						rel="noopener noreferrer" class="contact-link" aria-label="WhatsApp">
+						<span class="icon-circle">
+							<i class="ri-whatsapp-fill"></i>
+						</span>
+						<span class="contact-text">WhatsApp</span>
+					</a>
+                </div>
+                <div class="contact-address text-center mx-auto">
+                    <span class="icon-location">
+                        <i class="ri-map-pin-2-fill"></i>
+                    </span>
+                    Av. Providencia 1234, Providencia, Santiago, Chile
+                </div>
+                <div class="rounded-4 shadow-lg overflow-hidden mt-3" style="min-height:260px; border:2px solid #b38a8a;">
                     <iframe
                         src="https://www.google.com/maps?q=Av.+Providencia+1234,+Providencia,+Santiago,+Región+Metropolitana,+Chile&output=embed"
-                        width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
