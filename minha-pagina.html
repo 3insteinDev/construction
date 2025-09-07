@@ -31,8 +31,8 @@
 					<li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
 					<li class="nav-item"><a class="nav-link" href="#sobre">Sobre nosotros</a></li>
 					<li class="nav-item"><a class="nav-link" href="#produtos">Productos</a></li>
-					<li class="nav-item"><a class="nav-link" href="#redes">Redes Sociales</a></li>
 					<li class="nav-item"><a class="nav-link" href="#cardapio">Menú</a></li>
+					<li class="nav-item"><a class="nav-link" href="#redes">Redes Sociales</a></li>
 					<li class="nav-item"><a class="nav-link" href="#contato">Contáctanos</a></li>
 				</ul>
 			</div>
@@ -40,30 +40,33 @@
 	</nav>
 
 	<!-- Hero Section -->
-	<section id="inicio" class="hero text-center init-section section dark-background"
-		style="position:relative; min-height: 90vh; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-		<div style="
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)), url('./images/morango.jpg') center center/cover no-repeat;
-        /* filter: blur(4px) grayscale(30%); */
-        z-index: 1;
-        ">
-		</div>
-		<div class="container position-relative" style="z-index:2;">
-			<div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-				<div class="col-xl-10">
-					<div class="text-center text-dark">
-						<h1 data-aos="fade-up">Bienvenidos a La Brigaderia</h1>
-						<p data-aos="fade-up" data-aos-delay="200">Los mejores dulces para endulzar tu vida</p>
-						<a href="#produtos" class="btn btn-outline-dark mt-3" data-aos="fade-up"
-							data-aos-delay="400">Ver
-							productos</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<section id="inicio" class="hero d-flex align-items-stretch" style="min-height: 100vh; ">
+  <div class="container-fluid h-100">
+    <div class="row h-100 flex-nowrap">
+      <!-- Esquerda: texto e imagem menor -->
+      <div class="col-lg-6 d-flex flex-column justify-content-between align-items-start p-5" style="background: #b4977b;">
+        <div>
+          <div class="mt-4 mb-5">
+            <img src="./images/12.png" alt="La Brigaderia" style="max-width: 320px; width: 100%; box-shadow: 0 8px 32px rgba(0,0,0,0.10); border-radius: 8px;">
+          </div>
+          <h1 style="font-size: 3.5rem; font-weight: 600; color: #fff; line-height: 1;">La Brigaderia</h1>
+          <h2 style="font-size: 2rem; font-weight: 400; color: #fff; margin-top: 1.5rem;">Doces Artesanais</h2>
+          <p style="color: #f5ede3; font-size: 1.1rem; margin-top: 1rem;">Os melhores doces para adoçar sua vida.</p>
+        </div>
+        <div class="d-flex gap-3 mt-4">
+          <a href="https://www.facebook.com/LaBrigaderiaCL" target="_blank" class="text-white fs-4"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/la.brigaderia.cl" target="_blank" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.pinterest.com/" target="_blank" class="text-white fs-4"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <!-- Direita: imagem grande -->
+	<div class="col-lg-6 d-none d-lg-block p-0" style="background-color: #9c957c;">
+		<img src="./images/12.png" alt="Delicatto"
+			style="object-fit: cover; width: 100%; max-height: 100vh; display: block; margin: 0 auto;">
+	</div>
+    </div>
+  </div>
+</section>
 
 
 	<!-- Sobre Nosotros -->
@@ -94,23 +97,23 @@
 	</section>
 
 	<!-- Productos -->
-	<section id="produtos" class="py-5">
+	<section id="produtos" class="py-5" style="background-color: #9c957c;">
 		<div class="container">
-			<h2 class="text-center" data-aos="fade-up">Nuestros productos</h2>
+			<h2 class="text-center" data-aos="fade-up" style="color: #faf2e7;">Nuestros productos</h2>
 			<div class="row mt-4">
 				<div class="col-md-4" data-aos="zoom-in">
 					<div class="card">
-						<img src="./images/chocolate.jpg" class="card-img-top" alt="Pastel de chocolate">
+						<img src="./images/queques.jpg" class="card-img-top" alt="Pastel de chocolate">
 						<div class="card-body text-center">
-							<h5 class="card-title">Pastel de chocolate</h5>
+							<h5 class="card-title">Queques Gourmet</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
 					<div class="card">
-						<img src="./images/classico.jpg" class="card-img-top" alt="Cupcake">
+						<img src="./images/pascua.jpg" class="card-img-top" alt="Cupcake">
 						<div class="card-body text-center">
-							<h5 class="card-title">Cupcake</h5>
+							<h5 class="card-title">Especial Pascua</h5>
 						</div>
 					</div>
 				</div>
@@ -149,13 +152,13 @@
 
 
 	<!-- Redes Sociales - Sección inovadora e responsiva -->
-	<section id="redes" class="py-5" >
+	<section id="redes" class="py-5" style="background-color: #9c957c;">
 		<div class="container">
 			<div class="row justify-content-center align-items-center g-4">
 				<div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0" data-aos="fade-right">
-					<h2 class="fw-bold mb-3" style="color:var(--rosa-principal);font-size:2.2rem;">Nuestras Redes
+					<h2 class="fw-bold mb-3" style="color: #faf2e7;font-size:2.2rem;">Nuestras Redes
 						Sociales</h2>
-					<p class="lead text-secondary mb-0" style="font-size:1.15rem;">
+					<p class="lead mb-0" style="color: #faf2e7; font-size:1.15rem;">
 						Síguenos y acompaña nuestro mundo dulce, novidades, lanzamientos y promociones exclusivas.
 					</p>
 				</div>
